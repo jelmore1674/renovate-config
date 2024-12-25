@@ -6,5 +6,8 @@ module.exports = {
   autodiscover: true,
   optimizeForDisabled: true,
   prHourlyLimit: 30,
-  allowedPostUpgradeCommands: ['^echo .*'],
+  allowedPostUpgradeCommands: [
+    'echo "[security]" >> changelog/{{{depName}}}.toml',
+    'echo "change = [ "Updated `{{{depName}}}` from `{{{currentVersion}}}` to `{{{newVersion}}}`"] >> changelog/{{{depName}}}.toml',
+  ],
 };
