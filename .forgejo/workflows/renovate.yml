@@ -19,4 +19,5 @@ jobs:
           RENOVATE_CONFIG_FILE: "/workspace/renovate-bot/renovate-config/config.js" # replace it with your config.js path
           LOG_LEVEL: "debug"
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }} # your Revonate bot token
+          GITHUB_COM_TOKEN: ${{ secrets.TOKEN_GITHUB_COM }} # your github token
 
