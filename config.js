@@ -6,5 +6,4 @@ module.exports = {
   autodiscover: true,
   optimizeForDisabled: true,
   prHourlyLimit: 30,
-  allowedPostUpgradeCommands: ['.*'],
 };
