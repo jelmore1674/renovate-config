@@ -1,8 +1,8 @@
 module.exports = {
-  endpoint: 'https://forgejo.justinelmore.dev/api/v1', // replace it with your actual endpoint
+  //endpoint: 'https://forgejo.justinelmore.dev/api/v1', // replace it with your actual endpoint
   onboardingConfig: {
     $schema: 'https://docs.renovatebot.com/renovate-schema.json',
-    extends: ['local/renovate-bot/renovate-config'],
+    extends: ['local>renovate-bot/renovate-config'],
   },
   platform: 'gitea',
   onboardingConfigFileName: 'renovate.json',
