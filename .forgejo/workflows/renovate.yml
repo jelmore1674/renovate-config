@@ -17,7 +17,7 @@ jobs:
     container: ghcr.io/renovatebot/renovate:39.82.9@sha256:06f7e52d7b5109be9ceca95b62ad5cc3c0ecc0948b7ea99f5f98f0630995c094
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - run: renovate
+      - run: renovate --local
         env:
           RENOVATE_CONFIG_FILE: "/workspace/renovate-bot/renovate-config/config.js" # replace it with your config.js path
           LOG_LEVEL: "debug"
