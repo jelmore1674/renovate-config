@@ -6,17 +6,5 @@
 		"renovate-bot/renovate-config//meta.json"
 	],
 	"reviewers": ["jelmore1674"],
-	"automergeStrategy": "squash",
-	"packageRules": [
-		{
-			"description": "pin actions/release v2",
-			"matchPackageNames": [
-				"actions/release",
-				"https://forgejo.justinelmore.dev/actions/release"
-			],
-			"matchManagers": ["github-actions"],
-			"matchCurrentValue": "/^v2$/",
-			"replacementVersion": "v2.6.0"
-		}
-	]
+	"automergeStrategy": "squash"
 }
