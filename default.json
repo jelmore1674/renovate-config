@@ -5,6 +5,11 @@
 		"config:best-practices",
 		"renovate-bot/renovate-config//meta.json"
 	],
+	"ignorePresets": [
+		":semanticPrefixFixDepsChoreOthers",
+		"docker:pinDigests",
+		"helpers:pinGitHubActionDigests"
+	],
 	"reviewers": ["jelmore1674"],
 	"automergeStrategy": "squash",
 	"packageRules": [
