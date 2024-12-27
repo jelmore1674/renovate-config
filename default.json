@@ -3,5 +3,17 @@
 	"description": "default base preset for renovate config",
 	"extends": ["config:best-practices"],
 	"reviewers": ["jelmore1674"],
-	"automergeStrategy": "squash"
+	"automergeStrategy": "squash",
+	"packageRules": [
+		{
+			"description": "pin actions/release v2",
+			"matchPackageNames": [
+				"actions/release",
+				"https://forgejo.justinelmore.dev/actions/release"
+			],
+			"matchManagers": ["github-actions"],
+			"matchCurrentValue": "/^v2$/",
+			"replacementVersion": "v2.6.0"
+		}
+	]
 }
