@@ -1,10 +1,7 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"description": "default base preset for renovate config",
-	"extends": [
-		"config:best-practices",
-		"renovate-bot/renovate-config//meta.json"
-	],
+	"extends": ["config:best-practices"],
 	"reviewers": ["jelmore1674"],
 	"automergeStrategy": "squash"
 }
