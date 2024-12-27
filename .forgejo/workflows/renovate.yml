@@ -14,7 +14,7 @@ env:
 jobs:
   renovate:
     runs-on: docker
-    container: ghcr.io/renovatebot/renovate:39.82.9@sha256:06f7e52d7b5109be9ceca95b62ad5cc3c0ecc0948b7ea99f5f98f0630995c094
+    container: ghcr.io/renovatebot/renovate:39.83.3@sha256:f31ab26bd04c3bc384b77b99c7366577bb593acacd15584eec41f91c81666b41
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - run: renovate
