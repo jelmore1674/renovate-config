@@ -3,7 +3,7 @@
 	"description": "default base preset for renovate config",
 	"extends": [
 		"config:best-practices",
-		"renovate-bot/renovate-config//meta.json"
+		"renovate-bot/renovate-config/meta.json"
 	],
 	"reviewers": ["jelmore1674"],
 	"automergeStrategy": "squash"
