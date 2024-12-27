@@ -1,0 +1,19 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"description": "Override missing or wrong metadata",
+	"packageRules": [
+		{
+			"description": "override registry url and datasource for forgejo actions",
+			"matchPackageNames": ["actions/release"],
+			"overrideDatasource": "gitea-tags",
+			"registryUrls": ["https://forgejo.justinelmore.dev"]
+		}
+	],
+	"hostRules": [
+		{
+			"description": "Make renovate know this is a gitea compatible host",
+			"matchHost": "forgejo.justinelmore.dev",
+			"hostType": "gitea"
+		}
+	]
+}

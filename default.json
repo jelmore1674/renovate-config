@@ -1,7 +1,10 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"description": "default base preset for renovate config",
-	"extends": ["config:best-practices"],
+	"extends": [
+		"config:best-practices",
+		"renovate-bot/renovate-config//meta.json"
+	],
 	"reviewers": ["jelmore1674"],
 	"automergeStrategy": "squash",
 	"packageRules": [
@@ -15,5 +18,8 @@
 			"matchCurrentValue": "/^v2$/",
 			"replacementVersion": "v2.6.0"
 		}
-	]
+	],
+	"customDatasources": {
+		"actions/release": {}
+	}
 }
