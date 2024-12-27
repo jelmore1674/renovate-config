@@ -10,4 +10,11 @@ module.exports = {
   optimizeForDisabled: true,
   prHourlyLimit: 30,
   allowedPostUpgradeCommands: ['.*'],
+  hostRules: [
+    {
+      matchHost: 'forgejo.justinelmore.dev',
+      username: process.env.ACTION_USER,
+      password: process.env.RENOVATE_TOKEN,
+    },
+  ],
 };

@@ -24,6 +24,8 @@ jobs:
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }} # your Revonate bot token
           GITHUB_COM_TOKEN: ${{ secrets.TOKEN_GITHUB_COM }} # your github token
 
+          ACTION_USER: ${{ secrets.ACTION_USER }}
+
           RENOVATE_ENDPOINT: ${{ github.server_url }}
           RENOVATE_PLATFORM: gitea
           RENOVATE_GIT_AUTHOR: "Renovate Bot <renovate-bot@forgejo.justinelmore.dev>"
