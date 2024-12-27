@@ -1,5 +1,5 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["renovate-bot/renovate-config"],
+	"extends": ["https://forgejo.justinelmore.dev/renovate-bot/renovate-config"],
 	"assignees": ["jelmore1674"]
 }
