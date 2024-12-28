@@ -14,6 +14,23 @@
 	"automergeStrategy": "squash",
 	"packageRules": [
 		{
+			"description": "use fix scope for renovate updates",
+			"matchPackageNames": ["ghcr.io/visualon/renovate"],
+			"groupName": "renovate",
+			"semanticCommitType": "fix"
+		},
+		{
+			"description": "Automerge renovate updates",
+			"matchPackageNames": ["ghcr.io/visualon/renovate"],
+			"matchUpdateTypes": ["minor", "patch", "digest"],
+			"automerge": true
+		},
+		{
+			"description": "Update renovate only weekly",
+			"matchDepNames": ["ghcr.io/visualon/renovate"],
+			"extends": ["schedule:weekly"]
+		},
+		{
 			"description": "pin actions/release v2",
 			"matchPackageNames": [
 				"actions/release",
