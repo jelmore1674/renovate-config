@@ -3,7 +3,7 @@
 	"description": "Override missing or wrong metadata",
 	"packageRules": [
 		{
-			"description": "override registry url and datasource for forgejo actions",
+			"description": "override registry url and datasource for gitea actions",
 			"matchPackageNames": [
 				"actions/release",
 				"https://git.justinelmore.dev/actions/release"
@@ -15,7 +15,7 @@
 	"hostRules": [
 		{
 			"description": "Make renovate know this is a gitea compatible host",
-			"matchHost": "forgejo.justinelmore.dev",
+			"matchHost": "git.justinelmore.dev",
 			"hostType": "gitea"
 		}
 	]
