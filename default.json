@@ -34,7 +34,7 @@
 			"description": "pin actions/release v2",
 			"matchPackageNames": [
 				"actions/release",
-				"https://forgejo.justinelmore.dev/actions/release"
+				"https://git.justinelmore.dev/actions/release"
 			],
 			"matchManagers": ["github-actions"],
 			"matchCurrentValue": "/^v2$/",

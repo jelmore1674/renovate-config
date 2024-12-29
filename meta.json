@@ -4,9 +4,12 @@
 	"packageRules": [
 		{
 			"description": "override registry url and datasource for forgejo actions",
-			"matchPackageNames": ["actions/release"],
+			"matchPackageNames": [
+				"actions/release",
+				"https://git.justinelmore.dev/actions/release"
+			],
 			"overrideDatasource": "gitea-tags",
-			"registryUrls": ["https://forgejo.justinelmore.dev"]
+			"registryUrls": ["https://git.justinelmore.dev"]
 		}
 	],
 	"hostRules": [
