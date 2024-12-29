@@ -13,10 +13,9 @@ env:
 
 jobs:
   renovate:
-    runs-on: docker
-    container: ghcr.io/renovatebot/renovate:39.84.0@sha256:0960f8dcdd20225d610467f0b7bbb6c4284c0d8a5fa4bc5e0b63c2fb1c29205a
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - uses: actions/checkout@v4
       - run: renovate
         env:
           RENOVATE_CONFIG_FILE: "/workspace/renovate-bot/renovate-config/config.js" # replace it with your config.js path
