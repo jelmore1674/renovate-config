@@ -4,10 +4,7 @@
 	"packageRules": [
 		{
 			"description": "override registry url and datasource for gitea actions",
-			"matchPackageNames": [
-				"actions/release",
-				"https://git.justinelmore.dev/actions/release"
-			],
+			"matchPackageNames": ["https://git.justinelmore.dev/actions/release"],
 			"overrideDatasource": "gitea-tags",
 			"registryUrls": ["https://git.justinelmore.dev"]
 		}

@@ -32,9 +32,10 @@
 		},
 		{
 			"description": "pin actions/release v2",
-			"matchPackageNames": ["actions/release"],
+			"matchPackageNames": ["https://git.justinelmore.dev/actions/release"],
 			"matchManagers": ["github-actions"],
-			"replacementName": "https://git.justinelmore.dev/actions/release"
+			"matchCurrentValue": "/^v2$/",
+			"replacementName": "v2.6.1"
 		}
 	],
 	"customDatasources": {
