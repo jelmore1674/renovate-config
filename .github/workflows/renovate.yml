@@ -13,7 +13,8 @@ env:
 
 jobs:
   renovate:
-    runs-on: docker://ghcr.io/renovatebot/renovate:39.84.0
+    runs-on: renovate
+    container: ghcr.io/renovatebot/renovate:39.84.0
     steps:
       - uses: actions/checkout@v4
       - run: renovate
