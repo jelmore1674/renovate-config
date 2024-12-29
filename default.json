@@ -29,6 +29,12 @@
 			"description": "Update renovate only weekly",
 			"matchDepNames": ["ghcr.io/visualon/renovate"],
 			"extends": ["schedule:weekly"]
+		},
+		{
+			"description": "pin actions/release v2",
+			"matchPackageNames": ["actions/release"],
+			"matchManagers": ["github-actions"],
+			"replacementName": "https://git.justinelmore.dev/actions/release"
 		}
 	],
 	"customDatasources": {
