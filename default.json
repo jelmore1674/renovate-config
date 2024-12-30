@@ -38,6 +38,7 @@
 			"replacementName": "v2.6.1"
 		}
 	],
+	"postUpdateOptions": ["gomodTidy"],
 	"customDatasources": {
 		"actions/release": {}
 	}
