@@ -38,7 +38,7 @@
 			"replacementName": "v2.6.1"
 		}
 	],
-	"postUpdateOptions": ["gomodTidy"],
+	"postUpdateOptions": ["gomodUpdateImportPaths"],
 	"customDatasources": {
 		"actions/release": {}
 	}
