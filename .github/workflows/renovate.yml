@@ -14,7 +14,7 @@ env:
 jobs:
   renovate:
     runs-on: renovate
-    container: ghcr.io/renovatebot/renovate:39.90.2
+    container: ghcr.io/renovatebot/renovate:39.90.3
     steps:
       - uses: actions/checkout@v4
       - run: renovate
