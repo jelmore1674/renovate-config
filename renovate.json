@@ -1,5 +1,14 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["renovate-bot/renovate-config"],
-	"assignees": ["jelmore1674"]
+	"assignees": ["jelmore1674"],
+	"packageRules": [
+		{
+			"description": "Automerge renovate updates",
+			"matchPackageNames": ["ghcr.io/visualon/renovate"],
+			"matchUpdateTypes": ["minor", "patch", "digest"],
+			"automerge": true,
+			"automergeType": "branch"
+		}
+	]
 }
