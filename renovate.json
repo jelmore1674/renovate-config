@@ -2,6 +2,7 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["renovate-bot/renovate-config"],
 	"assignees": ["jelmore1674"],
+	"automerge": true,
 	"packageRules": [
 		{
 			"description": "Automerge renovate updates",
