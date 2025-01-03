@@ -3,6 +3,7 @@
 	"extends": ["renovate-bot/renovate-config"],
 	"assignees": ["jelmore1674"],
 	"automerge": true,
+	"ignoreTests": true,
 	"packageRules": [
 		{
 			"description": "Automerge renovate updates",
