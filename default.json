@@ -32,7 +32,7 @@
 		},
 		{
 			"description": "pin actions/release v2",
-			"matchPackageNames": ["https://git.justinelmore.dev/actions/release"],
+			"matchPackageNames": ["https://gitea.justinelmore.dev/actions/release"],
 			"matchManagers": ["github-actions"],
 			"matchCurrentValue": "/^v2$/",
 			"replacementName": "v2.6.1"
