@@ -3,7 +3,7 @@
 	"description": "default base preset for renovate config",
 	"extends": [
 		"config:best-practices",
-		"renovate-bot/renovate-config//meta.json"
+		"github>jelmore1674/renovate-config//meta.json"
 	],
 	"ignorePresets": [
 		":semanticPrefixFixDepsChoreOthers",

@@ -8,12 +8,5 @@
 			"overrideDatasource": "gitea-tags",
 			"registryUrls": ["https://gitea.justinelmore.dev"]
 		}
-	],
-	"hostRules": [
-		{
-			"description": "Make renovate know this is a gitea compatible host",
-			"matchHost": "gitea.justinelmore.dev",
-			"hostType": "gitea"
-		}
 	]
 }

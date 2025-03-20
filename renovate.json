@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["renovate-bot/renovate-config"],
+	"extends": ["github>jelmore1674/renovate-config"],
 	"assignees": ["jelmore1674"],
 	"automerge": true,
 	"ignoreTests": true,
